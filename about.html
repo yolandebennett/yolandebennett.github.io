@@ -25,25 +25,8 @@
         }
 
         body {
-            font-family: 'Karla', serif;
-            background-color: white;
-        }
-
-        .bottom, .bottom a, .bottom a:visited {
-            position: fixed;
-            bottom: 0;
-            font-size: 13px;
-            line-height: 165%;
-            color: #747489;
             font-family: 'Inconsolata', sans-serif;
-            font-weight: 400;
-            letter-spacing: 0.25px;
-            padding: 10px;
-            text-decoration: none;
-        }
-
-        .bottom a:hover {
-            text-transform: uppercase;
+            background-color: white;
         }
 
         h1,
@@ -97,11 +80,17 @@
         }
 
         strong {
+            color: #181818;
+            font-family: 'Inconsolata', sans-serif;
+            font-weight: 400;
+            font-size: 14px;
+        }
+
+        strong2, strong2 a {
             color: #17183b;
             font-weight: 500;
+            font-size: 14px;
             font-family: 'Inconsolata', sans-serif;
-            font-size: 15px;
-            letter-spacing: 0.25px;
         }
 
         td {
@@ -115,21 +104,35 @@
             color: #181818;
             letter-spacing: 0.25px;
             text-decoration: none;
+            text-transform: lowercase;
         }
 
         p a:hover {
-            text-transform: uppercase;
+            text-transform: uppercase;        
         }
 
         td a,
         td a:active,
         td a:visited {
-            text-decoration: underline;
+            text-decoration: none;
             color: #181818;
+        }
+
+        td a:hover {
+            text-decoration: underline #B9BAC4 dotted 2px;
+            text-underline-offset: 4px;
         }
 
         .clearfix {
             padding-bottom: 15px;
+        }
+
+        .clearfix2 {
+            padding-bottom: 20px;
+        }
+
+        .clearfix3 {
+            padding-bottom: 3px;
         }
 
         .entries {
@@ -138,13 +141,12 @@
         }
 
         img {
-            opacity: 0.9;
+            opacity: 1;
             vertical-align: center;
-            transition: 0.6s ease;
         }
 
         img:hover {
-            opacity: 1;
+            opacity: 0.9;
         }
 
         img {
@@ -152,39 +154,89 @@
         }
 
         table {
-            padding-bottom: 25px;
-            padding-top: 25px;
-            width: 750px;
+            padding-bottom: 20px;
+            padding-top: 20px;
+            width: 615px;
         }
         
         @media screen and (max-width: 600px) {
             table {
                 width: 400px;
             }
-
-            td {
-                display: table-row;
-                text-align: center;
-            }   
         }
     </style>
 
-    <body>
-        <h1><a href="index.html">Yolande Bennett</a></h1>
-        <h2><a href="about.html">About</a>&emsp;&starf;&emsp;<a href="resume.html">Resume</a>&emsp;&starf;&emsp;<a href="projects.html">Projects</a>&emsp;&starf;&emsp;<a href="mailto:ybennett97@gmail.com">Contact</a></h2>
-        <center>
+<body>
+    <h1><a href="index.html">Yolande Bennett</a></h1>
+    <h2><a href="about.html">About</a>&emsp;&starf;&emsp;<a href="resume.html">Resume</a>&emsp;&starf;&emsp;<a href="projects.html">Projects</a>&emsp;&starf;&emsp;<a href="mailto:ybennett97@gmail.com">Contact</a></h2>
+    <div class="clearfix3"></div>
+    <center>
         <table>
-            <tr>
-                <td><img src="yolande.JPG" width="275px"></td>
-                <td><strong>Yolande Bennett</strong>&ensp;is the Assistant Digital Archivist at Massachusetts Archives, where she assists in making
-                    permanent historic state records available online through the Archives’ Digital Repository.
+                <tr>
+                    <td><strong>Education</strong></td>
+                    <td><strong2>M.S. in Library & Information Science, Archives Management</strong2><br>Simmons University, Boston, Mass.<br>09/2021 &mdash; 05/2023
+                    <div class="clearfix"></div><strong2>B.F.A. in Graphic Design, <i>Cum Laude</i></strong2><br>Lesley University, Cambridge, Mass.<br>09/2016 &mdash; 02/2020
+                    <div class="clearfix2"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Experience</strong></td>
+                    <td><strong2>Assistant Digital Archivist</strong2><br>
+                    Massachusetts Archives, Boston, Mass.<br>07/2023 &mdash; present                    
                     <div class="clearfix"></div>
-                    She received her bachelor’s degree in Graphic Design from Lesley University in 2020, and a master’s degree in Library and Information
-                    Science, with a concentration in Archives Management, from Simmons University in 2023. She lives in Cambridge, Massachusetts.</td>
-            </tr>
-        </table>
+                    <strong2>Manuscript End-Processing Assistant</strong2><br>
+                    Schlesinger Library, Cambridge, Mass.<br>05/2022 &mdash; 04/2023
+                    <div class="clearfix"></div>
+                    <strong2>Archival & Special Collections Assistant</strong2><br>
+                    Prince Memorial Library, Cumberland, Me.<br>06/2011 &mdash; 7/2023
+                    <div class="clearfix"></div>
+                    <strong2>Archives Intern</strong2><br>
+                    Massachusetts College of Art & Design, Boston, Mass.<br>09/2021 &mdash; 12/2021
+                    <div class="clearfix"></div>
+                    <strong2>Library Assistant</strong2><br>
+                    Sherrill Library, Cambridge, Mass.<br>09/2016 &mdash; 05/2017
+                    <div class="clearfix2"></div>
+                </td>
+                </tr>
+                <tr>
+                    <td><strong>Board Memberships</strong></td>
+                    <td>
+                    <strong2>Archives Advisory Commissioner</strong2><br>
+                    Massachusetts State Historical Records Advisory Board<br>
+                    02/2025 &mdash; present</strong2>
+                    <div class="clearfix2"></div></td>
+                </tr>
+                <tr>
+                    <td><strong>Presentations</strong></td>
+                    <td><strong2><a href="https://masshistoryalliance.org/what-we-do/2025-mass-history-conference/">Handling Born-Digital Materials with MA-SHRAB</a></strong2>
+                        <br>Massachusetts History Alliance Conference, 06/2025
+                        <div class="clearfix"></div>
+                        <strong2><a href="wmhcc.pdf">An Introduction to MA-SHRAB</a></strong2>
+                        <br>Western Massachusetts Historical Commission Coalition, 05/2025
+                        <div class="clearfix"></div>
+                        <strong2><a href="https://masshistoryalliance.org/past-conferences/2024-mass-history-conference/">Facilitating Access to Archives through Digitization</a></i></strong2>
+                        <br>Massachusetts History Alliance Conference, 06/2024
+                        <div class="clearfix"></div>
+                        <strong2><a href="https://www.mma.org/mma-webinar-to-share-tips-for-getting-started-with-digitization/">Digitizing Municipal Records: Guidelines for Getting Started</a></strong2>
+                        <br>Massachusetts Municipal Association, 03/2024
+                        <div class="clearfix2"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Skills</strong></td>
+                    <td>Adobe Creative Suite, Conservation Treatment, Customer Service, Digital Commons, DSLR Photography, HTML/CSS, JavaScript, Microsoft Office, Notepad++, Omeka, Oxygen XML Editor, Preservica, Python, ReDiscovery, Versatile Retention, XMetaL
+                    <div class="clearfix2"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Interests</strong></td>
+                    <td>Art & Design, Bookstores, Coding, Coffee, Film & TV, Hiking, Live Music, Museums, Poetry, Printmaking, Reading on Public Transit, Running, Traveling, Yoga</td>
+                    <div class="clearfix3"></div>
+                </tr>
+            </table>
         </center>
-        <div class="bottom">coded by yolande, with help from <a href="https://www.w3schools.com/">w3schools</a></div>
+        <center><p>[&ensp;<a href="cv.pdf">Download CV</a>&ensp;]</p></center>
+        <div class="clearfix"></div>
     </body>
 
     </html>

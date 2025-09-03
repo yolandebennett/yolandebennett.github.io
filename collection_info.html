@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+    <title>Nelson Family Photographs</title>
+
+    <head>
+        <meta charset="UTF-8">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    </head>
+    <style>
+
+        table,
+        th,
+        td {
+            border: none;
+        }
+
+        tr,
+        td {
+            text-align: left;
+        }
+
+        body {
+            font-family: 'Karla', serif;
+            background-color: white;
+        }
+
+        html, body, a, a:active, a:visited, a:hover {
+            cursor: crosshair;
+        }
+
+        h1,
+        h1 a,
+        h1 a:active,
+        h1 a:visited {
+            font-size: 20px;
+            line-height: 165%;
+            color: #17183b;
+            font-family: 'Inconsolata', sans-serif;
+            font-weight: 400;
+            text-align: center;
+            text-transform: lowercase;
+            padding-top: 30px;
+            letter-spacing: 0.25px;
+            text-decoration: none;
+        }
+
+        .top a:hover {
+            text-decoration: underline #B9BAC4 dotted 2px;
+            text-underline-offset: 8px;
+        }
+
+        h2,
+        h2 a,
+        h2 a:active,
+        h2 a:visited {
+            font-size: 16px;
+            line-height: 165%;
+            color: #17183b;
+            font-family: 'Inconsolata', sans-serif;
+            font-weight: 400;
+            text-align: center;
+            text-transform: lowercase;
+            letter-spacing: 0.25px;
+            text-decoration: none;
+        }
+
+        h3 {
+            font-family: 'Inconsolata', serif;
+            color: #747489;
+            font-size: 14.5px;
+            font-weight: 500;
+            letter-spacing: 0.25px;
+            line-height: 100%;
+            text-transform: lowercase;
+            text-decoration: none;
+        }
+
+        h3 a, h3 a:visited, h3 a:active {
+            font-family: 'Inconsolata', serif;
+            color: #17183b;
+            font-size: 14.5px;
+            font-weight: 500;
+            letter-spacing: 0.25px;
+            line-height: 100%;
+            text-transform: lowercase;
+            text-decoration: none;
+        }
+
+        h3 a:hover {
+            text-decoration: underline #B9BAC4 dotted 2px;
+            text-underline-offset: 5px;
+        }
+
+        h2 a:hover {
+            text-transform: uppercase;
+        }
+
+        tr, td {
+            font-weight: 400;
+            font-family: 'Karla', sans-serif;
+            color: #181818;
+            vertical-align: top;
+            font-size: 13px;
+            letter-spacing: 0.25px;
+            line-height: 165%;
+        }
+
+        td strong {
+            color: #17183b;
+            font-weight: 500;
+            font-family: 'Karla', sans-serif;
+        }
+
+        td {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        p, p a, p a:active, p a:visited {
+            font-family: 'Inconsolata', sans-serif;
+            font-size: 12px;
+            color: #181818;
+            letter-spacing: 0.25px;
+            text-decoration: none;
+        }
+
+        p a:hover {
+            text-transform: uppercase;
+        }
+
+        .clearfix {
+            padding-top: 80px;
+        }
+
+        .clearfix2 {
+            padding-top: 5px;
+        }
+
+        .entries {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        img {
+            opacity: 1;
+            vertical-align: center;
+            transition: 0.6s ease;
+        }
+
+        img:hover {
+            opacity: 0.9;
+        }
+
+        table {
+            padding-top: 25px;
+            width: 690px;
+        }
+
+        a {
+            padding: 0px;
+        }
+
+        .bottom, .bottom a, .bottom a:visited {
+            position: fixed;
+            bottom: 0;
+            font-size: 13px;
+            line-height: 165%;
+            color: #747489;
+            font-family: 'Inconsolata', sans-serif;
+            font-weight: 400;
+            letter-spacing: 0.25px;
+            padding: 10px;
+            text-decoration: none;
+        }
+
+        .bottom a:hover {
+            text-transform: uppercase;
+        }
+
+        .top, .top a, .top a:visited {
+            position: fixed;
+            background-color: white;
+            width: 100%;
+            top: 0;
+            font-size: 18px;
+            line-height: 165%;
+            color: #747489;
+            font-family: 'Inconsolata', sans-serif;
+            font-weight: 500;
+            letter-spacing: 0.25px;
+            padding: 10px;
+            padding-left: 5px;
+            text-decoration: none;
+        }
+
+        .text { 
+            display: block; 
+            position: absolute; 
+            top: 50; 
+            left: 50; 
+            width: 360px; 
+            background-color: white; 
+            color: #181818; 
+            font-family: 'Inconsolata', sans-serif;
+            font-size: 12.5px;
+            line-height: 165%;
+            letter-spacing: 0.25px;
+            text-decoration: none;
+            text-align: left;
+            padding-top: 5px;
+        } 
+
+        .text2 {
+            display: block; 
+            position: absolute; 
+            top: 50; 
+            left: 50; 
+            width: 360px; 
+            background-color: white; 
+            color: #747474; 
+            font-family: 'Inconsolata', sans-serif;
+            font-size: 12.5px;
+            line-height: 165%;
+            letter-spacing: 0.25px;
+            text-decoration: none;
+            text-align: left;
+            padding-top: 8px;
+        }
+        
+        @media screen and (max-width: 600px) {
+            table {
+                width: 400px;
+            }
+
+            td {
+                display: table-row;
+                text-align: center;
+            } 
+            
+            img {
+                padding-bottom: 15px;
+            }
+
+            .clearfix {
+                padding-top: 30px;
+            }
+
+            .text {
+                display: none;
+            }
+        }
+    </style>
+
+    <body>
+        <div class="clearfix"></div>
+        <center>
+        <table>
+            <tr>
+                <td><strong>Title</strong></td>
+                <td>Nelson Family Photograph Collection<div class=clearfix2></div></td>
+            </tr>
+            <tr>
+                <td><strong>Subjects</strong></td>
+                <td>Bennett, Mary Grace (1957–)<br>
+                Judges—New York (State)<br>
+                Nelson, David (1949–)<br>
+                Nelson, Fanny Belle Carlson<br>
+                Nelson, Frederick Allen<br>
+                Nelson, Marietta Duvalle (1919–1999)<br>
+                Nelson, Phillip Milburn (1911–1997)<br>
+                Nelson, Rick (1946–)<br>
+                Nelson, Robert (1951–)<br>
+                New York<br>
+                Photographs—20th century<br>
+                Portraits—19th century<br>
+                Portraits—20th century<br>
+                Riddell, Elizabeth White<br>
+                Riddell, Robert<br>
+                United States. Naval Reserve. Women's Reserve<br>
+                White, David, Jr.<br>
+                White, David, Sr.<br>
+                White, Marsha<br>
+                White, Mary Grace<br>
+                World War, 1939-1945<div class=clearfix2></div></td>
+            <tr>
+                <td><strong>Description</strong></td>
+                <td>The Nelson Family Photograph Collection documents the lives of three generations of Nelson and White families, primarily Marietta Duvalle Nelson and her husband, Phillip Milburn Nelson, in New York, during the early- to mid-twentieth century.<div class=clearfix2></div>Phillip Milburn Nelson was born in Jamestown, New York on August 31, 1911 to parents Frederick Allen Nelson and Fanny Belle Carlson Nelson. Fanny Belle, who preferred to go by Belle, was born in Mayville, New York. She attended the Boston Conservatory of Music in Boston, Massachusetts, which was rare for women during her time. Phillip attended Cornell University in Ithaca, New York. He served in the United States Army during World War II from April 1943 to December 1945, and was stationed overseas in England and France. During the span of his career, he also worked for the Internal Revenue Service and operated his own accounting firm. Phillip met his wife, Marietta, through their work at the same accounting firm in Buffalo, New York. Marietta later went on to work for Phillip at his own firm.<div class=clearfix2></div>Marietta Duvalle Nelson was born in Medina, New York on October 13, 1919, to parents David White (a judge), and Mary Grace White. Marietta had a brother, David White, who was married to Marsha White, and a sister, Elizabeth (Betty) White Riddell, married to Robert Riddell. Betty was an English teacher at a Catholic school. She married Robert Riddell, an engineer, in 1950. Robert died suddenly from a brain aneurysm when he was in his thirties. Marietta was a member of Women Accepted for Voluntary Emergency Services (WAVES) from July 1943 to February 1944. WAVES was a military unit established on July 30, 1942 as the U.S. Navy’s corps of female members. During World War II, members of WAVES served in a wide variety of capacities, ranging from performing essential clerical duties to serving as instructors for male pilots-in-training.<div class=clearfix2></div>Phillip had been divorced from a prior marriage by the time he met and began his relationship with Marietta in 1942. Due to their religious beliefs, neither Marietta’s father, nor her aunt Etta (a Catholic nun), initially approved of her wish to marry Phillip. As a result, Marietta and Phillip decided to end their relationship. Later, when Phillip’s father passed away, Phillip returned to New York on leave from the war he was serving in. He contacted Marietta, and they eloped on April 24, 1943. Marietta lived with Phillip's mother, Fanny Belle, for a short time while Phillip was overseas during the war.<div class=clearfix2></div>Phillip and Marietta had four children together: Rick, born in 1946; David, born in 1949; Robert, born in 1951; and Mary Grace, born in 1957. Phillip passed away on December 25, 1997. His wife, Marietta, passed away on March 15, 1999.<div class=clearfix2></div></td>
+            </tr>
+            <tr>
+                <td><strong>Creator</strong></td>
+                <td>Bennett, Yolande Elizabeth<div class=clearfix2></div></td>
+            </tr>
+            <tr>
+                <td><strong>Date</strong></td>
+                <td>c.1890–1960<div class=clearfix2></div></td>
+            </tr>
+            <tr>
+                <td><strong>Format</strong></td>
+                <td>Photography<div class=clearfix2></div></td>
+            </tr>
+            <tr>
+                <td><strong>Language</strong></td>
+                <td>English<div class=clearfix2></div></td>
+            </tr>
+            <tr>
+                <td><strong>Type</strong></td>
+                <td>Still Image</td>
+            </tr>
+        </table>
+        </center>
+        <div class="clearfix"></div>
+        <div class="top"><a href="main_exhibit.html">nelson family photographs</a></div>
+    </body>
+
+    </html>

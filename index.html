@@ -10,7 +10,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     </head>
     <style>
         table,
@@ -25,17 +25,13 @@
         }
 
         body {
-            font-family: 'Karla', serif;
+            font-family: 'IBM Plex Sans', serif;
             background-color: white;
         }
 
-        body, a, a:active, a:hover, a:visited {
-            cursor: crosshair;
-        }
-
         .ascii-art2, .ascii-art2 a, .ascii-art2 a:hover, .ascii-art2 a:visited {
-            color: #17183b;
-            font-family: 'Inconsolata', monospace;
+            color: #181818;
+            font-family: 'IBM Plex Mono', monospace;
             font-size: 8.5px;
             font-weight: 900;
             line-height: 100%;
@@ -53,10 +49,10 @@
         .bottom, .bottom a, .bottom a:visited {
             position: fixed;
             bottom: 0;
-            font-size: 13px;
+            font-size: 11px;
             line-height: 165%;
             color: #747474;
-            font-family: 'Inconsolata', sans-serif;
+            font-family: 'IBM Plex Mono', sans-serif;
             font-weight: 400;
             letter-spacing: 0.25px;
             padding: 10px;
@@ -73,8 +69,8 @@
         h1 a:visited {
             font-size: 24px;
             line-height: 165%;
-            color: #17183b;
-            font-family: 'Inconsolata', sans-serif;
+            color: #181818;
+            font-family: 'IBM Plex Mono', sans-serif;
             font-weight: 400;
             text-align: center;
             text-transform: lowercase;
@@ -92,10 +88,10 @@
         h2 a,
         h2 a:active,
         h2 a:visited {
-            font-size: 16px;
+            font-size: 14px;
             line-height: 165%;
-            color: #17183b;
-            font-family: 'Inconsolata', sans-serif;
+            color: #181818;
+            font-family: 'IBM Plex Mono', sans-serif;
             font-weight: 400;
             text-align: center;
             text-transform: lowercase;
@@ -109,18 +105,19 @@
 
         tr, td {
             font-weight: 400;
-            font-family: 'Inconsolata', sans-serif;
+            font-family: 'IBM Plex Mono', sans-serif;
             color: #181818;
             vertical-align: top;
-            font-size: 14px;
+            font-size: 12px;
             letter-spacing: 0.25px;
-            line-height: 165%;
+            line-height: 170%;
+            text-align: justify;
         }
 
         strong {
-            color: #17183b;
+            color: #181818;
             font-weight: 500;
-            font-family: 'Inconsolata', sans-serif;
+            font-family: 'IBM Plex Mono', sans-serif;
             font-size: 16px;
             letter-spacing: 0.25px;
         }
@@ -131,7 +128,7 @@
         }
 
         p, p a, p a:active, p a:visited {
-            font-family: 'Inconsolata', sans-serif;
+            font-family: 'IBM Plex Mono', sans-serif;
             font-size: 14px;
             color: #181818;
             letter-spacing: 0.25px;
@@ -150,7 +147,7 @@
         }
 
         .clearfix {
-            padding-bottom: 15px;
+            padding-bottom: 6px;
         }
 
         .entries {
@@ -159,13 +156,7 @@
         }
 
         img {
-            opacity: 0.9;
             vertical-align: center;
-            transition: 0.6s ease;
-        }
-
-        img:hover {
-            opacity: 1;
         }
 
         img {
@@ -175,21 +166,25 @@
         table {
             padding-bottom: 25px;
             padding-top: 25px;
-            width: 750px;
+            width: 700px;
         }
         
-        @media screen and (max-width: 600px) {
+        @media screen and (max-width: 800px) {
             table {
                 width: 400px;
             }
 
             td {
                 display: table-row;
-                text-align: center;
+                text-align: justify;
             } 
 
             .bottom {
                 display: none;
+            }
+
+            img {
+                display: none;  
             }
         }
     </style>
@@ -211,8 +206,8 @@
                 <td>Yolande Bennett is the Assistant Digital Archivist at Massachusetts Archives, where she assists in making
                     permanent historic state records available online through the Archives’ Digital Repository.
                     <div class="clearfix"></div>
-                    She received her bachelor’s degree in Graphic Design from Lesley University in 2020, and a master’s degree in Library and Information
-                    Science, with a concentration in Archives Management, from Simmons University in 2023. She lives in Cambridge, Massachusetts.</td>
+                    She received her bachelor’s degree in Graphic Design from Lesley University in 2020, and a master’s in Library and Information
+                    Science and Archives Management from Simmons University in 2023. She lives in Cambridge, Massachusetts.</td>
             </tr>
         </table>
         </center>

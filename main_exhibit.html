@@ -1,249 +1,255 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nelson Family Photographs</title>
+    <meta name="description" content="The Nelson Family Photographs collection documents the activities of three generations of Nelson and White families in New York during the early-to-mid-twentieth century.">
 
-    <head>
-        <meta charset="UTF-8">
-        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-        <link rel="manifest" href="/site.webmanifest">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap" rel="stylesheet">
-    </head>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
     <style>
+        :root {
+            --ink: #17183b;
+            --slate: #747489;
+            --paper: #ffffff;
+            --rule: #d8d8de;
+            --body-text: #181818;
 
-        table,
-        th,
-        td {
-            border: none;
+            /* spacing scale, all on an 8px grid */
+            --space-xs: 8px;
+            --space-sm: 16px;
+            --space-md: 24px;
+            --space-lg: 32px;
+            --space-xl: 48px;
+            --space-xxl: 72px;
+
+            /* line-height scale */
+            --lh-loose: 165%;
+            --lh-base: 150%;
         }
 
-        tr,
-        td {
-            text-align: left;
+        * {
+            box-sizing: border-box;
         }
 
-        body {
-            font-family: 'Inconsolata', serif;
-            background-color: white;
+        html {
+            scroll-behavior: smooth;
         }
 
         html, body, a, a:active, a:visited, a:hover {
             cursor: crosshair;
         }
 
-        h1,
-        h1 a,
-        h1 a:active,
-        h1 a:visited {
-            font-size: 20px;
-            line-height: 165%;
-            color: #17183b;
-            font-family: 'Inconsolata', sans-serif;
-            font-weight: 400;
-            text-align: center;
-            text-transform: lowercase;
-            padding-top: 30px;
-            text-decoration: none;
-        }
-
-        .top a:hover {
-            text-decoration: underline #B9BAC4 dotted 2px;
-            text-underline-offset: 8px;
-        }
-
-        h2,
-        h2 a,
-        h2 a:active,
-        h2 a:visited {
-            font-size: 16px;
-            line-height: 165%;
-            color: #17183b;
-            font-family: 'Inconsolata', sans-serif;
-            font-weight: 400;
-            text-align: center;
-            text-transform: lowercase;
-            text-decoration: none;
-        }
-
-        h3 {
-            font-family: 'Inconsolata', serif;
-            color: #747489;
-            font-size: 14px;
-            font-weight: 500;
-            line-height: 108%;
-            text-transform: lowercase;
-            text-decoration: none;
-        }
-
-        h3 a, h3 a:visited, h3 a:active {
-            font-family: 'Inconsolata', serif;
-            color: #17183b;
-            font-size: 14px;
-            font-weight: 500;
-            line-height: 108%;
-            text-transform: lowercase;
-            text-decoration: none;
-        }
-
-        h3 a:hover {
-            text-decoration: underline #B9BAC4 dotted 2px;
-            text-underline-offset: 5px;
-        }
-
-        h2 a:hover {
-            text-transform: uppercase;
-        }
-
-        tr, td {
-            font-weight: 400;
-            font-family: 'Inconsolata', sans-serif;
-            color: #181818;
-            vertical-align: top;
-            font-size: 14px;
-            line-height: 165%;
-        }
-
-        strong {
-            color: #17183b;
-            font-weight: 500;
-            font-family: 'Inconsolata', sans-serif;
-            font-size: 15px;
-        }
-
-        td {
-            padding-left: 14px;
-            padding-right: 14px;
-        }
-
-        p, p a, p a:active, p a:visited {
-            font-family: 'Inconsolata', sans-serif;
-            font-size: 12px;
-            color: #181818;
-            text-decoration: none;
-        }
-
-        p a:hover {
-            text-transform: uppercase;
-        }
-
-        .clearfix {
-            padding-top: 70px;
-        }
-
-        .entries {
-            padding-left: 10px;
-            padding-right: 10px;
-        }
-
-        img {
-            opacity: 1;
-            vertical-align: center;
-            transition: 0.6s ease;
-        }
-
-        img:hover {
-            opacity: 0.9;
-        }
-
-        table {
-            padding-top: 30px;
-            width: 720px;
+        body {
+            margin: 0;
+            font-family: 'IBM Plex Serif', sans-serif;
+            background-color: var(--paper);
+            color: var(--body-text);
         }
 
         a {
-            padding: 0px;
+            color: inherit;
         }
 
-        .top, .top a, .top a:visited {
+        a:focus-visible,
+        button:focus-visible {
+            outline: 2px solid var(--ink);
+            outline-offset: 3px;
+        }
+
+        .top {
             position: fixed;
             top: 0;
-            background-color: white;
-            font-size: 18px;
-            line-height: 165%;
-            color: #747489;
-            font-family: 'Inconsolata', sans-serif;
-            font-weight: 500;
-            padding: 12px;
-            padding-left: 8px;
-            text-decoration: none;
+            left: 0;
+            right: 0;
+            background-color: var(--paper);
+            border-bottom: 1px solid transparent;
+            padding: var(--space-sm) var(--space-md);
+            z-index: 5;
         }
 
-        .text { 
-            display: block; 
-            position: absolute; 
-            top: 50; 
-            left: 50; 
-            width: 360px; 
-            background-color: white; 
-            color: #181818; 
-            font-family: 'Inconsolata', sans-serif;
-            font-size: 13px;
-            line-height: 150%;
+        .top a {
+            font-size: 16px;
+            line-height: var(--lh-loose);
+            color: var(--ink);
+            font-family: 'IBM Plex Mono', sans-serif;
+            font-weight: 400;
             text-decoration: none;
-            text-align: left;
-            padding-top: 8px;
-        } 
+            text-transform: lowercase;
+        }
 
-        .text2 {
-            display: block; 
-            position: absolute; 
-            top: 50; 
-            left: 50; 
-            width: 360px; 
-            background-color: white; 
-            color: #747474; 
-            font-family: 'Inconsolata', sans-serif;
+        .top a:hover,
+        .top a:focus-visible {
+            text-decoration: underline dotted 2px var(--rule);
+            text-underline-offset: 6px;
+        }
+
+        main {
+            padding-top: var(--space-xxl);
+            padding-bottom: var(--space-xl);
+        }
+
+        .exhibit {
+            max-width: 760px;
+            margin: 0 auto;
+            padding: 0 var(--space-md);
+        }
+
+        .entry {
+            display: flex;
+            gap: var(--space-lg);
+            align-items: flex-start;
+        }
+
+        figure {
+            margin: 0;
+            flex: 0 0 360px;
+            max-width: 360px;
+        }
+
+        figure a {
+            display: block;
+        }
+
+        figure img {
+            display: block;
+            width: 100%;
+            height: auto;
+            transition: opacity 0.5s ease;
+        }
+
+        figure a:hover img,
+        figure a:focus-visible img {
+            opacity: 0.9;
+        }
+
+        figcaption {
+            padding-top: var(--space-xs);
+            font-size: 11px;
+            line-height: var(--lh-base);
+            color: var(--body-text);
+            font-family: 'IBM Plex Mono', sans-serif;
+        }
+
+        .details {
+            flex: 1 1 auto;
+            min-width: 0;
+            max-width: 46ch;
+        }
+
+        .bio {
+            font-size: 14px;
+            line-height: var(--lh-loose);
+            color: var(--body-text);
+        }
+
+        .bio p {
+            margin: 0 0 var(--space-sm);
+        }
+
+        nav.links {
+            margin-top: var(--space-md);
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
             font-size: 12px;
-            line-height: 150%;
-            text-decoration: none;
-            text-align: left;
-            padding-top: 4px;
-            font-style: italic;
+            font-family: 'IBM Plex Mono', sans-serif;
+            line-height: var(--lh-base);
+            color: var(--slate);
+            text-transform: lowercase;
         }
-        
-        @media screen and (max-width: 600px) {
-            table {
-                width: 400px;
+
+        nav.links .link-row {
+            display: block;
+        }
+
+        nav.links a {
+            color: var(--ink);
+            text-decoration: none;
+        }
+
+        nav.links a:hover,
+        nav.links a:focus-visible {
+            text-decoration: underline dotted 2px var(--rule);
+            text-underline-offset: 5px;
+        }
+
+        nav.links .arrow {
+            color: var(--slate);
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+            figure a:hover img {
+                transition: none;
+            }
+        }
+
+        @media screen and (max-width: 680px) {
+            main {
+                padding-top: var(--space-xl);
             }
 
-            td {
-                display: table-row;
-                text-align: center;
-            }   
-
-            img {
-                padding-bottom: 15px;
+            .entry {
+                flex-direction: column;
+                gap: 0;
             }
 
-            .clearfix {
-                padding-top: 30px;
+            figure {
+                flex-basis: auto;
+                max-width: 100%;
+                margin: 0 auto;
             }
 
-            .text {
-                display: none;
+            .details {
+                max-width: 100%;
+                padding-top: var(--space-md);
             }
         }
     </style>
+</head>
 
-    <body>
-        <div class="clearfix"></div>
-        <center>
-        <table>
-            <tr>
-                <td><div><a href=""><img src="main_exhibit.jpg" width="350px" alt="Phillip Milburn Nelson in uniform sitting in hay field, c.1943" onclick="window.open('main_exhibit.jpg', '_blank');" /></a><div class="text">Phillip Milburn Nelson in uniform sitting in<br>hay field, c.1943</div></td>
-                <td>
-                The Nelson Family Photographs collection documents the activities of three generations of Nelson and White families, primarily Marietta Duvalle Nelson (née White) and her husband, Phillip Milburn Nelson, in New York, during the early&ndash;to&ndash;mid&ndash;twentieth century. Created by Yolande E. Bennett for LIS 448: Digital Stewardship, Simmons University, Spring 2022.
-                <h3><a href="exhibit_1.html">View Exhibit</a>&ensp;&#9656;</h3>
-                <h3><a href="collection_info.html">Collection Info</a>&ensp;&#9656;</h3>
-                </td>
-            </tr>
-        </table>
-        </center>
-        <div class="clearfix"></div>
-        <div class="top"><a href="main_exhibit.html">nelson family photographs</a></div>
-    </body>
+<body>
+    <div class="top"><a href="main_exhibit.html">nelson family photographs exhibit</a></div>
 
-    </html>
+    <main id="main">
+        <div class="exhibit">
+
+            <article class="entry">
+                <figure>
+                    <a href="main_exhibit.jpg" target="_blank" rel="noopener">
+                        <img
+                            src="main_exhibit.jpg"
+                            width="360"
+                            loading="eager"
+                            alt="Phillip Milburn Nelson in uniform sitting in hay field, c.1943">
+                    </a>
+                    <figcaption>
+                        Phillip Milburn Nelson in uniform sitting in hay field, c.1943
+                    </figcaption>
+                </figure>
+
+                <div class="details">
+                    <div class="bio">
+                        <p>The Nelson Family Photographs collection documents the activities of three generations of Nelson and White families, primarily Marietta Duvalle Nelson (n&eacute;e White) and her husband, Phillip Milburn Nelson, in New York, during the early&ndash;to&ndash;mid&ndash;twentieth century. Created by Yolande E. Bennett for LIS 448: Digital Stewardship, Simmons University, Spring 2022.</p>
+                    </div>
+
+                    <nav class="links" aria-label="Exhibit navigation">
+                        <span class="link-row"><a href="exhibit_1.html">View Exhibit</a>&ensp;<span class="arrow" aria-hidden="true">&#8250;</span></span>
+                        <span class="link-row"><a href="collection_info.html">Collection Info</a>&ensp;<span class="arrow" aria-hidden="true">&#8250;</span></span>
+                    </nav>
+                </div>
+            </article>
+        </div>
+    </main>
+</body>
+</html>

@@ -108,34 +108,6 @@
             font-family: 'IBM Plex Sans', monospace;
         }
 
-        .thumb-link {
-            display: block;
-        }
-
-        .thumb {
-            position: relative;
-            display: block;
-            width: 100%;
-            aspect-ratio: 1 / 1;
-            overflow: hidden;
-            background:
-                repeating-linear-gradient(45deg, #f4f4f4, #f4f4f4 6px, #fff 6px, #fff 12px);
-        }
-
-        .thumb img {
-            position: absolute;
-            inset: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-        }
-
-        .thumb-link:hover .thumb {
-            outline: 1px dotted #f7b9c2;
-            outline-offset: 3px;
-        }
-
         .title {
             display: block;
             width: fit-content;
@@ -298,61 +270,29 @@
     <div class="clearfix3"></div>
 
     <main class="grid-wrap">
-        <h1 class="grid-heading">Select Digital Exhibits [Under Construction]</h1>
-        <ul class="grid">
+        <h1 class="grid-heading">Select Digital Exhibits</h1>
+        <ul class="grid no-thumbs">
             <li class="item">
-                <a class="thumb-link" href="https://digitalarchives.sec.state.ma.us/birds-of-massachusetts/" tabindex="-1" aria-hidden="true">
-                    <span class="thumb"><img src="birds.png" alt="" loading="lazy" onerror="this.style.display='none'"></span>
-                </a>
-                <a class="title" href="https://digitalarchives.sec.state.ma.us/birds-of-massachusetts/">Paintings From: Birds of Massachusetts</a>
+                <a class="title" href="https://digitalarchives.sec.state.ma.us/birds-of-massachusetts/">Paintings From: Birds of Massachusetts & Other New England States</a>
                 <span class="caption">Massachusetts Archives</span>
             </li>
             <li class="item">
-                <a class="thumb-link" href="https://digitalarchives.sec.state.ma.us/american-jewish-identity/" tabindex="-1" aria-hidden="true">
-                    <span class="thumb"><img src="jewish.png" alt="" loading="lazy" onerror="this.style.display='none'"></span>
-                </a>
-                <a class="title" href="https://digitalarchives.sec.state.ma.us/american-jewish-identity/">American Jewish Identity in Massachusetts</a>
-                <span class="caption">Massachusetts Archives</span>
-            </li>
-            <li class="item">
-                <a class="thumb-link" href="https://digitalarchives.sec.state.ma.us/sacco-and-vanzetti/" tabindex="-1" aria-hidden="true">
-                    <span class="thumb"><img src="images/sacco-and-vanzetti.jpg" alt="" loading="lazy" onerror="this.style.display='none'"></span>
-                </a>
-                <a class="title" href="https://digitalarchives.sec.state.ma.us/sacco-and-vanzetti/">Commonwealth v. Sacco &amp; Vanzetti</a>
-                <span class="caption">Massachusetts Archives</span>
-            </li>
-            <li class="item">
-                <a class="thumb-link" href="https://digitalarchives.sec.state.ma.us/rev250" tabindex="-1" aria-hidden="true">
-                    <span class="thumb"><img src="images/rev250.jpg" alt="" loading="lazy" onerror="this.style.display='none'"></span>
-                </a>
-                <a class="title" href="https://digitalarchives.sec.state.ma.us/rev250">Revolution 250</a>
-                <span class="caption">Massachusetts Archives</span>
-            </li>
-            <li class="item">
-                <a class="thumb-link" href="https://digitalarchives.sec.state.ma.us/salem-witch-trials" tabindex="-1" aria-hidden="true">
-                    <span class="thumb"><img src="images/salem-witch-trials.jpg" alt="" loading="lazy" onerror="this.style.display='none'"></span>
-                </a>
-                <a class="title" href="https://digitalarchives.sec.state.ma.us/salem-witch-trials">Salem Witch Trials Papers</a>
-                <span class="caption">Massachusetts Archives</span>
-            </li>
-            <li class="item">
-                <a class="thumb-link" href="https://digitalarchives.sec.state.ma.us/salem-fire-of-1914" tabindex="-1" aria-hidden="true">
-                    <span class="thumb"><img src="images/salem-fire-1914.jpg" alt="" loading="lazy" onerror="this.style.display='none'"></span>
-                </a>
-                <a class="title" href="https://digitalarchives.sec.state.ma.us/salem-fire-of-1914">Great Salem Fire of 1914</a>
-                <span class="caption">Massachusetts Archives</span>
-            </li>
-            <li class="item">
-                <a class="thumb-link" href="main_exhibit.html" tabindex="-1" aria-hidden="true">
-                    <span class="thumb"><img src="images/nelson-family.jpg" alt="" loading="lazy" onerror="this.style.display='none'"></span>
-                </a>
                 <a class="title" href="main_exhibit.html">Nelson Family Photograph Collection</a>
                 <span class="caption">Simmons University</span>
             </li>
             <li class="item">
-                <a class="thumb-link" href="https://web.archive.org/web/20210811050318/https://cumberland200.omeka.net/" tabindex="-1" aria-hidden="true">
-                    <span class="thumb"><img src="images/cumberland-200.jpg" alt="" loading="lazy" onerror="this.style.display='none'"></span>
-                </a>
+                <a class="title" href="https://digitalarchives.sec.state.ma.us/salem-fire-of-1914">Great Salem Fire of 1914</a>
+                <span class="caption">Massachusetts Archives</span>
+            </li>
+            <li class="item">
+                <a class="title" href="https://digitalarchives.sec.state.ma.us/salem-witch-trials">Salem Witch Trials Papers</a>
+                <span class="caption">Massachusetts Archives</span>
+            </li>
+            <li class="item">
+                <a class="title" href="https://digitalarchives.sec.state.ma.us/rev250">Revolution 250</a>
+                <span class="caption">Massachusetts Archives</span>
+            </li>
+            <li class="item">
                 <a class="title" href="https://web.archive.org/web/20210811050318/https://cumberland200.omeka.net/">Bicentennial of Cumberland, Maine</a>
                 <span class="caption">Prince Memorial Library</span>
             </li>
@@ -361,24 +301,20 @@
         <h1 class="grid-heading second">Select Publications</h1>
         <ul class="grid no-thumbs">
             <li class="item">
-                <a class="title" href="Casco_Bay_Archaeological_Project.pdf">Casco Bay Archaeological Project Collection</a>
-                <span class="caption">Prince Memorial Library, 2022</span>
-            </li>
-            <li class="item">
-                <a class="title" href="https://digitalmaine.com/cumberland_books/90/">Cumberland, Maine Families</a>
-                <span class="caption">Prince Memorial Library, 2021</span>
+                <a class="title" href="https://simmonslis.libguides.com/boston-music-scene">History of the Boston Music Scene, 1960s – 1990s</a>
+                <span class="caption">Simmons University, 2022</span>
             </li>
             <li class="item">
                 <a class="title" href="https://digitalmaine.com/maine_running_hall_of_fame/21/">Maine Running Hall of Fame Biographies: Through 2006</a>
                 <span class="caption">Prince Memorial Library, 2021</span>
             </li>
             <li class="item">
-                <a class="title" href="https://digitalmaine.com/cumberland_books/86/">Roads of Cumberland, Maine</a>
+                <a class="title" href="https://digitalmaine.com/cumberland_books/90/">Cumberland, Maine Families</a>
                 <span class="caption">Prince Memorial Library, 2021</span>
             </li>
             <li class="item">
-                <a class="title" href="https://simmonslis.libguides.com/boston-music-scene">History of the Boston Music Scene, 1960s – 1990s</a>
-                <span class="caption">Simmons University, 2022</span>
+                <a class="title" href="Casco_Bay_Archaeological_Project.pdf">Casco Bay Archaeological Project Collection</a>
+                <span class="caption">Prince Memorial Library, 2022</span>
             </li>
             <li class="item">
                 <a class="title" href="Black_Artists_Union_MassArt.pdf">Black Artists Union Collection, 1970-2017</a>

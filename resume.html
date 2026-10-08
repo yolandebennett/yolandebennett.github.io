@@ -222,24 +222,11 @@
                 flex-direction: column;
             }
 
-            .floating-nav {
-                order: 1;
-                padding: 6px 16px 0;
-                margin: 0;
-                align-items: center;
-                text-align: center;
-            }
 
             .clearfix5 {
                 padding: 6px;
             }
 
-            /* center the ascii logo on mobile */
-            .ascii-art2 pre {
-                text-align: center;
-                width: fit-content;
-                margin: 0.3em auto 0;
-            }
 
             .clearfix3 {
                 padding: 0;
@@ -249,6 +236,40 @@
         @media only screen and (max-width: 1100px) {
             .floating-nav {
                 position: static;
+            }
+        }
+        /* ---------- Mobile: nav row on the right, logo left ---------- */
+        @media only screen and (max-width: 600px) {
+            .ascii-art2 {
+                padding: 0 16px;
+            }
+
+            .ascii-art2 pre {
+                text-align: left;
+                width: fit-content;
+                margin: 0.3em 0 0;
+            }
+
+            body {
+                padding-bottom: 56px;
+            }
+
+            .floating-nav {
+                position: fixed;
+                top: auto;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: center;
+                gap: 0;
+                margin: 0;
+                padding: 14px 16px;
+                background: #fff;
+                border-top: 1px solid #eee;
+                text-align: center;
             }
         }
     </style>
@@ -408,5 +429,6 @@
     </main>
 
     <h2 class="floating-nav"><a href="index.html">About</a><a href="resume.html">Resume</a><a href="projects.html">Projects</a><a href="mailto:ybennett97@gmail.com">Contact</a></h2>
+
 </body>
 </html>

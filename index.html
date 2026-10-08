@@ -1,103 +1,30 @@
 <!DOCTYPE html>
-<title>Yolande Bennett</title>
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>About | Yolande Bennett</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <script src="https://kit.fontawesome.com/5009e4469c.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <style>
-        a {
-            text-decoration: none;
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'IBM Plex Mono', monospace;
+            background-color: white;
+            margin: 0;
         }
 
         body, a, a:active, a:hover, a:visited {
             cursor: crosshair;
-        }
-
-        .clearfix {
-            padding: 20px;
-            border: none;
-        }
-
-        .clearfix2 {
-            padding: 10px;
-            border: none;
-        }
-
-        .clearfix3 {
-            padding: 5px;
-            border: none;
-        }
-
-        h2,
-        h2 a,
-        h2 a:active,
-        h2 a:visited {
-            font-size: 13px;
-            line-height: 150%;
-            color: #181818;
-            font-family: 'IBM Plex Mono', sans-serif;
-            font-weight: 400;
-            text-align: center;
-            text-transform: lowercase;
-            text-decoration: none;
-            letter-spacing: 0.25%;
-        }
-
-        h2 a:hover {
-            text-transform: uppercase;
-        }
-
-        div {
-            background-color: white;
-            width: 320px;
-            border: 2px dotted #181818;
-            font-size: 14px;
-            line-height: 150%;
-            text-transform: uppercase;
-            font-family: 'IBM Plex Mono', sans-serif;
-            font-weight: 400;
-            color: #181818;
-            padding: 20px;
-            margin: auto;
-            text-align: left;
-            letter-spacing: 0.25%;
-        }
-
-        f1, f1 a, f1 a:active, f1 a:visited {
-            font-family: 'IBM Plex Mono', sans-serif;
-            font-size: 12px;
-            line-height: 150%;
-            font-weight: 400;
-            color: #181818;
-            text-transform: none;
-            text-align: left;
-            text-decoration: none;
-        }
-
-        f1 a:hover {
-            text-decoration: underline;
-        }
-
-        .ascii-art1, .ascii-art1 a, .ascii-art1 a:hover, .ascii-art1 a:visited {
-            color: #181818;
-            font-family: 'IBM Plex Mono', monospace;
-            font-size: 12px;
-            font-weight: 100;
-            line-height: 100%;
-            border: none;
-            padding: 0px;
-            width: auto;
-            text-decoration: none;
         }
 
         .ascii-art2, .ascii-art2 a, .ascii-art2 a:hover, .ascii-art2 a:visited {
@@ -112,43 +39,257 @@
             text-decoration: none;
         }
 
+        .ascii-art2 {
+            overflow-x: auto;
+        }
+
+        .clearfix3 { padding: 2px; }
+        .clearfix5 { padding: 6px; }
+
         pre {
+            text-align: center;
+            margin: 0.3em 0;
+        }
+
+        h2,
+        h2 a,
+        h2 a:active,
+        h2 a:visited {
+            font-size: 14px;
+            line-height: 150%;
+            color: #181818;
+            font-family: 'IBM Plex Sans', monospace;
+            font-weight: 350;
+            text-align: center;
+            text-transform: lowercase;
+            text-decoration: none;
+        }
+
+        h2 {
+            margin: 0 10px;
+        }
+
+        h2 a:hover {
+            text-decoration: underline #ee6d8a wavy 0.5px;
+            text-underline-offset: 3px;
+        }
+
+        /* ---------- Page container ---------- */
+        .grid-wrap {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 30px;
+        }
+
+        .grid-heading {
+            font-size: 15px;
+            line-height: 165%;
+            font-weight: 350;
+            color: #17183b;
+            text-transform: none;
+            margin: 0 0 20px 0;
+        }
+
+        /* ---------- Two columns: image + text ---------- */
+        .about {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: start;
+        }
+
+        .about-image {
+            margin: 0;
+        }
+
+        .about-image .frame {
+            position: relative;
+            display: block;
+            width: 100%;
+            aspect-ratio: 4 / 5;
+            overflow: hidden;
+            background:
+                repeating-linear-gradient(45deg, #f4f4f4, #f4f4f4 6px, #fff 6px, #fff 12px);
+        }
+
+        .about-image img {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            opacity: 1;
+        }
+
+        /* Caption style taken from grid.html */
+        .caption {
+            display: block;
+            margin-top: 4px;
+            font-weight: 350;
+            font-size: 11px;
+            line-height: 150%;
+            color: #181818;
+            opacity: 0.8;
+        }
+
+        .about-text {
+            font-family: 'IBM Plex Sans', monospace;
+            font-weight: 350;
+            font-size: 13px;
+            line-height: 165%;
+            color: #181818;
+        }
+
+        .about-text p {
+            margin: 0 0 1em 0;
+            max-width: 60ch;
+        }
+
+        .about-text a {
+            color: #181818;
+            text-decoration: underline #ee6d8a wavy 0.5px;
+            text-underline-offset: 3px;
+        }
+
+        .about-text a:hover {
+            text-decoration-thickness: 1px;
+        }
+
+        .about-text .grid-heading.second {
+            margin-top: 32px;
+        }
+
+        .about-list {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: grid;
+            gap: 14px;
+        }
+
+        .about-list .title {
+            display: block;
+            font-size: 13px;
+            line-height: 150%;
+        }
+
+        .about-list .caption {
+            display: block;
+            margin-top: 2px;
+            font-size: 11px;
+            line-height: 150%;
+            opacity: 0.8;
+        }
+
+        /* Fixed side nav, stacked, top-left */
+        .floating-nav {
+            position: fixed;
+            left: 0;
+            top: 0;
+            z-index: 10;
+            margin: 0;
+            padding: 16px 20px;
+            background: #fff;
+            border: none;
             text-align: left;
-            width: fit-content;
-            margin: 1em auto;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 8px;
+        }
+
+        /* ---------- Responsive ---------- */
+        @media only screen and (max-width: 700px) {
+            .about {
+                grid-template-columns: 1fr;
+                gap: 24px;
+            }
+
+            .about-image {
+                max-width: 420px;
+            }
+        }
+
+        @media only screen and (max-width: 600px) {
+            .grid-wrap {
+                padding: 24px 16px;
+                order: 2;
+            }
+
+            /* stack page so the nav sits under the ascii art */
+            body {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .floating-nav {
+                order: 1;
+                padding: 6px 16px 0;
+                margin: 0;
+                align-items: center;
+                text-align: center;
+            }
+
+            .clearfix5 {
+                padding: 6px;
+            }
+
+            /* center the ascii logo on mobile */
+            .ascii-art2 pre {
+                text-align: center;
+                width: fit-content;
+                margin: 0.3em auto 0;
+            }
+
+            .clearfix3 {
+                padding: 0;
+            }
+        }
+
+        @media only screen and (max-width: 1100px) {
+            .floating-nav {
+                position: static;
+            }
         }
     </style>
 </head>
 
 <body>
-    <div class="clearfix"></div>
-<div class="ascii-art2">
-<a href="index.html"><pre>
+    <div class="clearfix5"></div>
+    <div class="ascii-art2">
+    <a href="index.html"><pre>
              _                 _        _                           _   _   
  _   _  ___ | | __ _ _ __   __| | ___  | |__   ___ _ __  _ __   ___| |_| |_ 
 | | | |/ _ \| |/ _` | '_ \ / _` |/ _ \ | '_ \ / _ \ '_ \| '_ \ / _ \ __| __|
 | |_| | (_) | | (_| | | | | (_| |  __/ | |_) |  __/ | | | | | |  __/ |_| |_ 
  \__, |\___/|_|\__,_|_| |_|\__,_|\___| |_.__/ \___|_| |_|_| |_|\___|\__|\__|
- |___/                                                                      
-</pre></a>
-</div>
+ |___/                                                                      </pre></a>
+    </div>
     <div class="clearfix3"></div>
-    <div class="ascii-art1">
-    <a href="main.html"><pre>
-         __
-        /  \
-       / ..|\
-      (_\  |_)
-      /  \@'
-     /     \
-_   /  `   |
-\\/  \  | _\
- \   /_ || \\_
-  \____)|_) \_)
-    </pre></a></div>
-    <div class="clearfix3"></div>
-    <h2><a href="main.html">>> click to enter <<</a></h2>
-    <div class="clearfix3"></div>
-    <h2>last updated:<br>sept. 17, 2026</h2>
+
+    <main class="grid-wrap">
+        <h1 class="grid-heading">About Yolande</h1>
+
+        <div class="about">
+            <!-- Column 1: image -->
+            <figure class="about-image">
+                <span class="frame">
+                    <img src="yolande.png" alt="Portrait of Yolande Bennett" onerror="this.style.display='none'">
+                </span>
+                <figcaption class="caption">Rockport, Massachusetts, 2025</figcaption>
+            </figure>
+
+            <!-- Column 2: text -->
+            <div class="about-text">
+                <p>Yolande Bennett is the Assistant Digital Archivist at Massachusetts Archives, where she assists in making permanent historic state records available online through the Archives’ Digital Repository.</p>
+                <p>Since 2025, she has served on the Massachusetts State Historical Records Advisory Board as Archives Advisory Commissioner, assisting the board in supporting institutions, organizations, and repositories across the state that manage historical records.</p>
+                <p>She received her bachelor’s degree in Graphic Design from Lesley University in 2020, and a master’s in Library and Information Science, with a concentration in Archives Management, from Simmons University in 2023. Originally from Maine, she currently lives in Cambridge, Massachusetts.</p>
+            </div>
+        </div>
+    </main>
+
+    <h2 class="floating-nav"><a href="index.html">About</a><a href="resume.html">Resume</a><a href="projects.html">Projects</a><a href="mailto:ybennett97@gmail.com">Contact</a></h2>
 </body>
 </html>

@@ -1,34 +1,26 @@
 <!DOCTYPE html>
-<title>Yolande Bennett</title>
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>Resume | Yolande Bennett</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <script src="https://kit.fontawesome.com/5009e4469c.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <style>
-        table,
-        th,
-        td {
-            border: none;
-        }
-
-        tr,
-        td {
-            text-align: left;
+        * {
+            box-sizing: border-box;
         }
 
         body {
-            font-family: 'IBM Plex Mono', sans-serif;
+            font-family: 'IBM Plex Mono', monospace;
             background-color: white;
+            margin: 0;
         }
 
         body, a, a:active, a:hover, a:visited {
@@ -47,120 +39,220 @@
             text-decoration: none;
         }
 
-        .clearfix {
-            padding: 5px;
-            border: none;
+        .ascii-art2 {
+            overflow-x: auto;
         }
 
-        .clearfix2 {
-            padding-bottom: 10px;
-        }
-
-        .clearfix3 {
-            padding: 5px;
-            border: none;
-        }
-
-        .clearfix4 {
-            padding: 10px;
-        }
-
-        .clearfix5 {
-            padding: 20px;
-            border: none;
-        }
+        .clearfix3 { padding: 2px; }
+        .clearfix5 { padding: 6px; }
 
         pre {
             text-align: center;
+            margin: 0.3em 0;
         }
 
         h2,
         h2 a,
         h2 a:active,
         h2 a:visited {
-            font-size: 13px;
+            font-size: 14px;
             line-height: 150%;
             color: #181818;
-            font-family: 'IBM Plex Mono', sans-serif;
-            font-weight: 400;
+            font-family: 'IBM Plex Sans', monospace;
+            font-weight: 350;
             text-align: center;
             text-transform: lowercase;
             text-decoration: none;
-            letter-spacing: 0.25%;
+        }
+
+        h2 {
+            margin: 0 10px;
+        }
+
+        .bullets li a:hover {
+            text-decoration: underline #f7b9c2 wavy 0.5px;
+            text-underline-offset: 3px;
         }
 
         h2 a:hover {
-            text-transform: uppercase;
+            text-decoration: underline #ee6d8a wavy 0.5px;
+            text-underline-offset: 3px;
         }
 
-        tr, td {
-            font-weight: 400;
-            font-family: 'IBM Plex Mono', sans-serif;
-            color: #181818;
-            vertical-align: top;
-            font-size: 12px;
+        /* ---------- Page container ---------- */
+        .grid-wrap {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 30px;
+        }
+
+        .grid-heading {
+            font-size: 14px;
             line-height: 165%;
-            text-transform: none;
-            text-align: left;
-            text-decoration: none;
-            letter-spacing: 0.25%;
-        }
-
-        strong {
+            font-weight: 350;
             color: #17183b;
-            font-family: 'IBM Plex Mono', sans-serif;
-            font-weight: 400;
-            line-height: 165%;
-            font-size: 12px;
-            letter-spacing: 0.25%;
-            text-transform: uppercase;
+            text-transform: none;
+            margin: 0 0 20px 0;
         }
 
-        strong2, strong2 a {
-            color: #181818;
-            font-weight: 400;
-            font-size: 12px;
-            letter-spacing: 0.25%;
-            line-height: 165%;
-            font-family: 'IBM Plex Mono', sans-serif;
+        /* ---------- Resume sections: heading left, entries right ---------- */
+        .resume-section {
+            display: grid;
+            grid-template-columns: 200px 1fr;
+            gap: 0 40px;
+            margin-bottom: 36px;
         }
 
-        td {
-            padding-left: 10px;
-            padding-right: 10px;
+        .resume-section .grid-heading {
+            margin: 0;
         }
 
-        td a,
-        td a:active,
-        td a:visited {
+        .entries {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: grid;
+            gap: 18px;
+        }
+
+        .entry a {
             text-decoration: none;
             color: #181818;
         }
 
-        td a:hover {
-            text-decoration: underline #181818 wavy 0.5px;
-            text-underline-offset: 4px;
+        .title {
+            display: block;
+            width: fit-content;
+            max-width: 100%;
+            font-family: 'IBM Plex Sans', monospace;
+            font-size: 13px;
+            line-height: 150%;
+            font-weight: 350;
+            color: #181818;
         }
 
-        table {
-            width: 500px;
-            border: 2px dotted #181818;
-            padding: 20px;
+        a.title:hover,
+        a.title:focus-visible {
+            text-decoration: underline #ee6d8a wavy 0.5px;
+            text-underline-offset: 3px;
+        }
+
+        a.title, .bullets li a {
+            text-decoration: underline #ee6d8a wavy 0.5px;
+            text-underline-offset: 3px;
+        }
+
+        .caption {
+            display: block;
+            margin-top: 2px;
+            font-family: 'IBM Plex Mono', monospace;
+            font-weight: 350;
+            font-size: 11px;
+            line-height: 165%;
+            color: #181818;
+        }
+
+        .caption + .caption {
+            margin-top: 0;
+        }
+
+        .bullets {
+            list-style: none;
+            margin: 8px 0 0 0;
+            padding-left: 0px;
+            max-width: 60ch;
+            font-family: 'IBM Plex Sans', monospace;
+            font-weight: 350;
+            font-size: 13px;
+            line-height: 165%;
+            color: #181818;
+        }
+
+        .bullets li {
+            font-family: 'IBM Plex Sans', monospace;
+            font-size: 11.5px;
+        }
+
+        .plain {
+            margin: 0;
+            max-width: 60ch;
+            font-family: 'IBM Plex Sans', monospace;
+            font-weight: 350;
+            font-size: 13px;
+            line-height: 165%;
+            color: #181818;
+        }
+
+        /* Fixed side nav, stacked, top-left */
+        .floating-nav {
+            position: fixed;
+            left: 0;
+            top: 0;
+            z-index: 10;
+            margin: 0;
+            padding: 16px 20px;
+            background: #fff;
+            border: none;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 8px;
+        }
+
+        /* ---------- Responsive ---------- */
+        @media only screen and (max-width: 700px) {
+            .resume-section {
+                grid-template-columns: 1fr;
+                gap: 12px;
+                margin-bottom: 32px;
+            }
         }
 
         @media only screen and (max-width: 600px) {
-            table {
-                border: none;
-                padding: 0px;
-                width: 400px;
+            .grid-wrap {
+                padding: 24px 16px;
+                order: 2;
+            }
+
+            /* stack page so the nav sits under the ascii art */
+            body {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .floating-nav {
+                order: 1;
+                padding: 6px 16px 0;
+                margin: 0;
+                align-items: center;
+                text-align: center;
             }
 
             .clearfix5 {
-                padding: 10px;
+                padding: 6px;
+            }
+
+            /* center the ascii logo on mobile */
+            .ascii-art2 pre {
+                text-align: center;
+                width: fit-content;
+                margin: 0.3em auto 0;
+            }
+
+            .clearfix3 {
+                padding: 0;
             }
         }
 
+        @media only screen and (max-width: 1100px) {
+            .floating-nav {
+                position: static;
+            }
+        }
     </style>
+</head>
 
 <body>
     <div class="clearfix5"></div>
@@ -171,80 +263,150 @@
 | | | |/ _ \| |/ _` | '_ \ / _` |/ _ \ | '_ \ / _ \ '_ \| '_ \ / _ \ __| __|
 | |_| | (_) | | (_| | | | | (_| |  __/ | |_) |  __/ | | | | | |  __/ |_| |_ 
  \__, |\___/|_|\__,_|_| |_|\__,_|\___| |_.__/ \___|_| |_|_| |_|\___|\__|\__|
- |___/                                                                      
-    </pre></a>
+ |___/                                                                      </pre></a>
     </div>
     <div class="clearfix3"></div>
-    <center>
-        <table>
-                <tr>
-                    <td><strong>Education</strong></td>
-                    <td><strong2>M.S. in Library & Information Science, Archives Management Conc.</strong2><br>Simmons University, Boston,  Mass.<br>09/2021 &mdash; 05/2023
-                    <div class="clearfix"></div><strong2>B.F.A. in Graphic Design, <i>cum laude</i></strong2><br>Lesley University, Cambridge,  Mass.<br>09/2016 &mdash; 02/2020
-                    <div class="clearfix2"></div>
-                    </td>
-                </tr>
-                <tr>
-                    <td><strong>Experience</strong></td>
-                    <td><strong2>Asst. Digital Archivist</strong2><br> 
-                    Mass. Archives<br>Boston,  Mass.<br>07/2023 &mdash; present                    
-                    <div class="clearfix"></div>
-                    <strong2>Manuscript End-Processing Asst.</strong2><br>
-                    Schlesinger Library<br>Cambridge,  Mass.<br>05/2022 &mdash; 04/2023
-                    <div class="clearfix"></div>
-                    <strong2>Special Collections Asst.</strong2><br>
-                    Prince Memorial Library<br>Cumberland, Me.<br>06/2011 &mdash; 07/2023
-                    <div class="clearfix"></div>
-                    <strong2>Archives Asst.</strong2><br>
-                    Mass. College of Art & Design<br>Boston,  Mass.<br>09/2021 &mdash; 12/2021
-                    <div class="clearfix"></div>
-                    <strong2>Library Asst.</strong2><br> 
-                    Sherrill Library<br>Cambridge,  Mass.<br>09/2016 &mdash; 05/2017
-                    <div class="clearfix2"></div>
-                </td>
-                </tr>
-                <tr>
-                    <td><strong>Board Memberships</strong></td>
-                    <td>
-                    <strong2>Archives Advisory Commissioner</strong2><br> 
-                    Mass. Historical Records Advisory Board<br>
-                    02/2025 &mdash; present</strong2>
-                    <div class="clearfix2"></div></td>
-                </tr>
-                <tr>
-                    <td><strong>Presentations</strong></td>
-                     <td><strong2><a href="https://masshistoryalliance.org/what-we-do/2026-mass-history-conference/">Catalogue Everything: Collection Management Systems &amp; More</a>.</strong2><br>
-                        Mass. History Alliance Conference, 06/2026
-                        <div class="clearfix"></div>
-                        <strong2><a href="https://masshistoryalliance.org/what-we-do/2025-mass-history-conference/">Handling Born-Digital Materials</a>.</strong2><br>
-                        Mass. History Alliance Conference, 06/2025
-                        <div class="clearfix"></div>
-                        <strong2><a href="wmhcc.pdf">An Introduction to MA-SHRAB</a>.</strong2><br>
-                        Western Mass. Historical Commission Coalition, 05/2025
-                        <div class="clearfix"></div>
-                        <strong2><a href="https://masshistoryalliance.org/past-conferences/2024-mass-history-conference/">Facilitating Access to Archives Through Digitization</a>.</strong2>
-                        Mass. History Alliance Conference, 06/2024
-                        <div class="clearfix"></div>
-                        <strong2><a href="https://www.mma.org/mma-webinar-to-share-tips-for-getting-started-with-digitization/">Digitizing Municipal Records</a>.</strong2>
-                        <br>Mass. Municipal Association, 03/2024
-                        <div class="clearfix2"></div>
-                    </td>
-                </tr>
-                <tr>
-                    <td><strong>Skills</strong></td>
-                    <td>Adobe Creative Suite, Command-Line Interface, Digital Commons, HTML/CSS, Microsoft Office, Notepad++, Omeka, Oxygen XML Editor, Preservica, Python, ReDiscovery, WordPress, XMetaL
-                    <div class="clearfix2"></div>
-                    </td>
-                </tr>
-                <tr>
-                    <td><strong>Interests</strong></td>
-                    <td>Art & Design, Bookstores, Coding, Coffee, Film & TV, Hiking, Live Music, Museums, Poetry, Printmaking, Reading on Public Transit, Running, Traveling, Yoga</td>
-                    <div class="clearfix3"></div>
-                </tr>
-            </table>
-        </center>
-        <div class="clearfix4"></div>
-    <h2><a href="resume.html">Resume</a>&emsp;*&emsp;<a href="projects.html">Projects</a>&emsp;*&emsp;<a href="links.html">Links</a>&emsp;*&emsp;<a href="mailto:ybennett97@gmail.com">Contact</a></h2>
-        <div class="clearfix5"></div>
-    </body>
-    </html>
+
+    <main class="grid-wrap">
+
+        <!-- ===== Education ===== -->
+        <section class="resume-section">
+            <h1 class="grid-heading">Education</h1>
+            <ul class="entries">
+                <li class="entry">
+                    <span class="title">M.S. in Library &amp; Information Science / Archives Management</span>
+                    <span class="caption">Simmons University, Boston, Mass.</span>
+                    <span class="caption">09/2021 &mdash; 05/2023</span>
+                </li>
+                <li class="entry">
+                    <span class="title">B.F.A. in Graphic Design, <i>cum laude</i></span>
+                    <span class="caption">Lesley University, Cambridge, Mass.</span>
+                    <span class="caption">09/2016 &mdash; 02/2020</span>
+                </li>
+            </ul>
+        </section>
+
+        <!-- ===== Experience ===== -->
+        <section class="resume-section">
+            <h1 class="grid-heading">Experience</h1>
+            <ul class="entries">
+                <li class="entry">
+                    <span class="title">Assistant Digital Archivist</span>
+                    <span class="caption">Massachusetts Archives</span>
+                    <span class="caption">Boston, Mass.</span>
+                    <span class="caption">07/2023 &mdash; present</span>
+                    <ul class="bullets">
+                        <li>Assist in facilitating the transfer of born-digital records to the Archives.</li>
+                        <li>Process digital records, including arrangement and description of records.</li>
+                        <li>Preserve digital records, including through the ingest and migration of records in the Massachusetts Archives’ digital repository, powered by Preservica.</li>
+                        <li>Assist in developing and facilitating large-scale digitization projects, including creating item-level Dublin Core metadata in XML format for digital surrogates.</li>
+                        <li>Assist in managing and maintaining the Massachusetts Archives’ digital repository, hosted on WordPress.</li>
+                        <li>Development of HTML/CSS <a href="https://digitalarchives.sec.state.ma.us/exhibits/">Digital Exhibits</a> feature to highlight digitized materials.</li>
+                        <li>Facilitate updates to the Statewide and Municipal Records Retention Schedules.</li>
+                        <li>Assist in supervising student interns, including hiring, training, and assigning tasks.</li>
+                    </ul>
+                </li>
+                <li class="entry">
+                    <span class="title">Manuscript End-Processing Assistant</span>
+                    <span class="caption">Schlesinger Library, Radcliffe Institute, Harvard University</span>
+                    <span class="caption">Cambridge, Mass.</span>
+                    <span class="caption">05/2022 &mdash; 04/2023</span>
+                    <ul class="bullets">
+                        <li>Re-boxed collections, numbered folders, and entered numbers into <a href="https://hollisarchives.lib.harvard.edu/catalog?op=must&clause%5B0%5D%5Bfield%5D=all_fields&clause%5B0%5D%5Bquery%5D=%22yolande+e.+bennett%22&clause%5B1%5D%5Bfield%5D=within_collection&clause%5B1%5D%5Bquery%5D=&clause%5B2%5D%5Bfield%5D=name&clause%5B2%5D%5Bquery%5D=&clause%5B3%5D%5Bfield%5D=place&clause%5B3%5D%5Bquery%5D=&clause%5B4%5D%5Bfield%5D=subject&clause%5B4%5D%5Bquery%5D=&clause%5B5%5D%5Bfield%5D=title&clause%5B5%5D%5Bquery%5D=&clause%5B6%5D%5Bfield%5D=container&clause%5B6%5D%5Bquery%5D=&clause%5B7%5D%5Bfield%5D=identifier&clause%5B7%5D%5Bquery%5D=&range%5Bdate_range%5D%5Bbegin%5D=&range%5Bdate_range%5D%5Bend%5D=&sort=score+desc%2C+title_sort+asc&commit=Search">EAD finding aids</a>.</li>
+                        <li>Quality assurance of preservation photocopying.</li>
+                        <li>Separated and filed fragile materials, restricted materials, and photographs.</li>
+                        <li>Labeled and barcoded boxes.</li>
+                        <li>Shelved collections, or prepared them for transfer to the Harvard Depository.</li>
+                    </ul>
+                </li>
+                <li class="entry">
+                    <span class="title">Archival &amp; Special Collections Assistant</span>
+                    <span class="caption">Prince Memorial Library</span>
+                    <span class="caption">Cumberland, Me.</span>
+                    <span class="caption">06/2011 &mdash; 07/2023</span>
+                    <ul class="bullets">
+                        <li>Digital Maine Repository: Contributed to Digital Maine Repository, a partnership of the Maine State Library, Maine State Archives, and community institutions around the state, to share historical content with the Digital Public Library of America. Transcribed, scanned, and assigned metadata to materials; cover and layout design for original digital publications; and e-published to the Digital Commons platform.</li>
+                        <li><a href="https://yolandebennett.github.io/NEA.pdf">Climate Change and the Shell Middens of Casco Bay (Grant Funded)</a>: Provided archival treatment for documents relating to the University of Southern Maine’s 1978–80 Casco Bay Archaeological Project. Organized and re-foldered original documents; created a digital archive; produced a <a href="https://yolandebennett.github.io/Casco_Bay_Archaeological_Project.pdf">finding aid</a> for both physical and digital materials; and participated in archaeological excavation and survey on multiple islands in Casco Bay.</li>
+                        <li><a href="https://web.archive.org/web/20210811050318/https://cumberland200.omeka.net/">Bicentennial of Cumberland, Maine</a>: Curated multiple online exhibits hosted on Omeka for the bicentennial of the founding of Cumberland, Maine. Scanned, uploaded, and assigned Dublin Core metadata to materials; and designed logo.</li>
+                    </ul>
+                </li>
+                <li class="entry">
+                    <span class="title">Archives Assistant</span>
+                    <span class="caption">Morton R. Godine Library, Massachusetts College of Art &amp; Design</span>
+                    <span class="caption">Boston, Mass.</span>
+                    <span class="caption">09/2021 &mdash; 12/2021</span>
+                    <ul class="bullets">
+                        <li>Assisted in processing multiple archival collections, including the Black Artists Union, Studio for Interrelated Media, and Student Government Association collections.</li>
+                        <li>Re-boxed, re-foldered, and numbered materials.</li>
+                        <li>Produced a <a href="https://yolandebennett.github.io/Black_Artists_Union_MassArt.pdf">finding aid</a> for the Black Artists Union collection.</li>
+                    </ul>
+                </li>
+                <li class="entry">
+                    <span class="title">Library Assistant</span>
+                    <span class="caption">Sherrill Library, Lesley University</span>
+                    <span class="caption">Cambridge, Mass.</span>
+                    <span class="caption">09/2016 &mdash; 05/2017</span>
+                    <ul class="bullets">
+                        <li>Processed donated materials, and entered their cataloging data into a Microsoft Excel spreadsheet.</li>
+                        <li>Labeled and described archival materials.</li>
+                        <li>Worked on various design projects, including event posters and a bookplate.</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+        <!-- ===== Board Memberships ===== -->
+        <section class="resume-section">
+            <h1 class="grid-heading">Board Memberships</h1>
+            <ul class="entries">
+                <li class="entry">
+                    <span class="title">Archives Advisory Commissioner</span>
+                    <span class="caption">Mass. Historical Records Advisory Board</span>
+                    <span class="caption">02/2025 &mdash; present</span>
+                    <ul class="bullets">
+                        <li>Appointed by the Secretary of the Commonwealth and the Governor to serve as Archives Advisory Commissioner to the board, in accordance with MGL Chapter 9 Section 2A.</li>
+                        <li>Present annually at the Mass History Conference, organized by the Massachusetts History Alliance.</li>
+                        <li>Participate in public meetings and webinars to provide an overview of the board’s grants and programs.</li>
+                        <li>Assist in compiling and selecting applicants for the Veterans’ Heritage Grant Program and Archival Field Fellowship Program.</li>
+                </li>
+            </ul>
+        </section>
+
+        <!-- ===== Presentations ===== -->
+        <section class="resume-section">
+            <h1 class="grid-heading">Presentations</h1>
+            <ul class="entries">
+                <li class="entry">
+                    <a class="title" href="https://masshistoryalliance.org/what-we-do/2026-mass-history-conference/">Catalogue Everything: Collection Management Systems &amp; More</a>
+                    <span class="caption">Mass. History Alliance Conference, 06/2026</span>
+                </li>
+                <li class="entry">
+                    <a class="title" href="https://masshistoryalliance.org/past-conferences/2025-mass-history-conference-2/">Handling Born-Digital Materials</a>
+                    <span class="caption">Mass. History Alliance Conference, 06/2025</span>
+                </li>
+                <li class="entry">
+                    <a class="title" href="wmhcc.pdf">An Introduction to MA-SHRAB</a>
+                    <span class="caption">Western Mass. Historical Commission Coalition, 05/2025</span>
+                </li>
+                <li class="entry">
+                    <a class="title" href="https://masshistoryalliance.org/past-conferences/2024-mass-history-conference/">Facilitating Access to Archives Through Digitization</a>
+                    <span class="caption">Mass. History Alliance Conference, 06/2024</span>
+                </li>
+                <li class="entry">
+                    <a class="title" href="https://www.mma.org/mma-webinar-to-share-tips-for-getting-started-with-digitization/">Digitizing Municipal Records</a>
+                    <span class="caption">Mass. Municipal Association, 03/2024</span>
+                </li>
+            </ul>
+        </section>
+
+        <!-- ===== Skills ===== -->
+        <section class="resume-section">
+            <h1 class="grid-heading">Skills</h1>
+            <p class="plain">Adobe Creative Suite, Command-Line Interface, Digital Commons, DSLR Photography, HTML/CSS, Microsoft Office, Notepad++, Omeka, Oxygen XML Editor, Preservica, Python, ReDiscovery, WordPress, XMetaL, Zasio</p>
+        </section>
+
+    </main>
+
+    <h2 class="floating-nav"><a href="index.html">About</a><a href="resume.html">Resume</a><a href="projects.html">Projects</a><a href="mailto:ybennett97@gmail.com">Contact</a></h2>
+</body>
+</html>

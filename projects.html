@@ -1,32 +1,27 @@
 <!DOCTYPE html>
-<title>Yolande Bennett</title>
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <title>Yolande Bennett</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <script src="https://kit.fontawesome.com/5009e4469c.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <style>
-        table,
-        th,
-        td {
-            border: none;
-        }
-
-        tr,
-        td {
-            text-align: left;
+        * {
+            box-sizing: border-box;
         }
 
         body {
-            font-family: 'IBM Plex Mono', sans-serif;
+            font-family: 'IBM Plex Mono', monospace;
             background-color: white;
+            margin: 0;
         }
 
         body, a, a:active, a:hover, a:visited {
@@ -45,119 +40,228 @@
             text-decoration: none;
         }
 
-        .clearfix {
-            padding: 5px;
-            border: none;
+        .ascii-art2 {
+            overflow-x: auto;
         }
 
-        .clearfix2 {
-            padding-bottom: 10px;
-        }
-
-        .clearfix3 {
-            padding: 5px;
-            border: none;
-        }
-
-        .clearfix4 {
-            padding: 10px;
-        }
-
-        .clearfix5 {
-            padding: 20px;
-            border: none;
-        }
+        .clearfix3 { padding: 2px; }
+        .clearfix4 { padding: 10px; }
+        .clearfix5 { padding: 6px; }
 
         pre {
             text-align: center;
+            margin: 0.3em 0;
         }
 
         h2,
         h2 a,
         h2 a:active,
         h2 a:visited {
-            font-size: 13px;
+            font-size: 14px;
             line-height: 150%;
             color: #181818;
-            font-family: 'IBM Plex Mono', sans-serif;
-            font-weight: 400;
+            font-family: 'IBM Plex Sans', monospace;
+            font-weight: 350;
             text-align: center;
             text-transform: lowercase;
             text-decoration: none;
-            letter-spacing: 0.25%;
+        }
+
+        h2 {
+            margin: 0 10px;
         }
 
         h2 a:hover {
-            text-transform: uppercase;
+            text-decoration: underline #ee6d8a wavy 0.5px;
+            text-underline-offset: 3px;
         }
 
-        tr, td {
-            font-weight: 400;
-            font-family: 'IBM Plex Mono', sans-serif;
-            color: #181818;
-            vertical-align: top;
-            font-size: 12px;
+        /* ---------- Grid container (replaces the 500px table) ---------- */
+        .grid-wrap {
+            width: 100%;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 30px;
+        }
+
+        .grid-heading {
+            font-size: 14px;
             line-height: 165%;
-            text-transform: none;
-            text-align: left;
-            text-decoration: none;
-            letter-spacing: 0.25%;
-        }
-
-        strong {
+            font-weight: 350;
             color: #17183b;
-            font-family: 'IBM Plex Mono', sans-serif;
-            font-weight: 400;
-            line-height: 165%;
-            font-size: 12px;
-            text-transform: uppercase;
-            letter-spacing: 0.25%;
+            text-transform: none;
+            margin: 0 0 15px 0;
         }
 
-        strong2, strong2 a {
-            color: #181818;
-            font-weight: 400;
-            font-size: 12px;
-            line-height: 165%;
-            letter-spacing: 0.25%;
-            font-family: 'IBM Plex Mono', sans-serif;
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 26px 20px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
         }
 
-        td {
-            padding-left: 10px;
-            padding-right: 10px;
-        }
-
-        td a,
-        td a:active,
-        td a:visited {
+        .item a {
             text-decoration: none;
             color: #181818;
+            font-family: 'IBM Plex Sans', monospace;
         }
 
-        td a:hover {
-            text-decoration: underline #181818 wavy 0.5px;
-            text-underline-offset: 4px;
+        .thumb-link {
+            display: block;
         }
 
-        table {
-            width: 500px;
-            border: 2px dotted #181818;
-            padding: 20px;
+        .thumb {
+            position: relative;
+            display: block;
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            overflow: hidden;
+            background:
+                repeating-linear-gradient(45deg, #f4f4f4, #f4f4f4 6px, #fff 6px, #fff 12px);
+        }
+
+        .thumb img {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .thumb-link:hover .thumb {
+            outline: 1px dotted #f7b9c2;
+            outline-offset: 3px;
+        }
+
+        .title {
+            display: block;
+            width: fit-content;
+            max-width: 100%;
+            margin-top: 10px;
+            font-size: 13px;
+            line-height: 150%;
+            font-weight: 350;
+        }
+
+        .grid a {
+            text-decoration: underline #ee6d8a wavy 0.5px;
+            text-underline-offset: 3px;
+        }
+
+        .title:hover,
+        .title:focus-visible {
+            text-decoration: underline #f7b9c2 wavy 0.5px;
+            text-underline-offset: 3px;
+        }
+
+        .caption {
+            display: block;
+            margin-top: 4px;
+            font-weight: 350;
+            font-size: 11px;
+            line-height: 150%;
+            color: #181818;
+            opacity: 0.8;
+        }
+
+        .grid.no-thumbs {
+            grid-template-columns: 1fr;
+            gap: 18px;
+        }
+
+        .no-thumbs .title {
+            margin-top: 0;
+        }
+
+        .grid-heading.second {
+            margin-top: 40px;
+        }
+
+        /* Fixed side nav, stacked, top-left */
+        .floating-nav {
+            position: fixed;
+            left: 0;
+            top: 0;
+            z-index: 10;
+            margin: 0;
+            padding: 16px 20px;
+            background: #fff;
+            border: none;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 8px;
+        }
+
+        /* ---------- Responsive ---------- */
+        @media only screen and (max-width: 800px) {
+            .grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            .grid.no-thumbs {
+                grid-template-columns: 1fr;
+            }
         }
 
         @media only screen and (max-width: 600px) {
-            table {
+            .grid-wrap {
                 border: none;
-                padding: 0px;
-                width: 400px;
+                padding: 24px 16px;
+                order: 2;
+            }
+
+            /* stack page so the nav sits under the ascii art */
+            body {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .floating-nav {
+                order: 1;
+                padding: 6px 16px 0;
+                margin: 0;
+                align-items: center;
+                text-align: center;
+            }
+
+            /* center the ascii logo on mobile */
+            .ascii-art2 pre {
+                text-align: center;
+                width: fit-content;
+                margin: 0.3em auto 0;
+            }
+
+            .clearfix3 {
+                padding: 0;
+            }
+
+            .grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 24px 14px;
             }
 
             .clearfix5 {
-                padding: 10px;
+                padding: 6px;
+            }
+        }
+
+        @media only screen and (max-width: 1100px) {
+            .floating-nav {
+                position: static;
+            }
+        }
+
+        @media only screen and (max-width: 360px) {
+            .grid {
+                grid-template-columns: 1fr;
             }
         }
     </style>
+</head>
 
 <body>
     <div class="clearfix5"></div>
@@ -168,50 +272,100 @@
 | | | |/ _ \| |/ _` | '_ \ / _` |/ _ \ | '_ \ / _ \ '_ \| '_ \ / _ \ __| __|
 | |_| | (_) | | (_| | | | | (_| |  __/ | |_) |  __/ | | | | | |  __/ |_| |_ 
  \__, |\___/|_|\__,_|_| |_|\__,_|\___| |_.__/ \___|_| |_|_| |_|\___|\__|\__|
- |___/                                                                      
-    </pre></a>
+ |___/                                                                      </pre></a>
     </div>
     <div class="clearfix3"></div>
-    <center>
-        <table>
-                <tr>
-                    <td><strong>Select<br>Digital Exhibits</strong></td>
-                    <td><strong2>Mass. Archives:</strong2><br>
-                    <a href="https://digitalarchives.sec.state.ma.us/birds-of-massachusetts/">Paintings From: Birds of Mass.</a><br>
-                    <a href="https://digitalarchives.sec.state.ma.us/american-jewish-identity/">American Jewish Identity in Mass.</a><br>
-                    <a href="https://digitalarchives.sec.state.ma.us/sacco-and-vanzetti/">Commonwealth v. Sacco & Vanzetti</a><br>
-                    <a href="https://digitalarchives.sec.state.ma.us/rev250">Revolution 250</a><br>
-                    <a href="https://digitalarchives.sec.state.ma.us/salem-witch-trials">Salem Witch Trials Papers</a><br>
-                    <a href="https://digitalarchives.sec.state.ma.us/salem-fire-of-1914">Great Salem Fire of 1914</a>
-                    <div class="clearfix"></div>
-                    <strong2>Simmons University:</strong2><br><a href="main_exhibit.html">Nelson Family Photograph Collection</a>
-                    <div class="clearfix"></div>
-                    <strong2>Prince Memorial Library:</strong2><br>
-                    <a href="https://web.archive.org/web/20210811050318/https://cumberland200.omeka.net/">Bicentennial of Cumberland, Me.</a>
-                    <div class="clearfix2"></div>
-                    </td>
-                </tr>
-                <tr>
-                    <td><strong>Select Publications</strong></td>
-                    <td>
-                    <strong2>Simmons University:</strong2><br><a href="https://simmonslis.libguides.com/boston-music-scene">History of the Boston Music Scene</a>
-                    <div class="clearfix"></div>
-                    <strong2>Prince Memorial Library:</strong2><br>
-                    <a href="Casco_Bay_Archaeological_Project.pdf">Casco Bay Archaeological Project</a><br>
-                    <a href="https://digitalmaine.com/cumberland_books/90/">Cumberland, Me. Families</a><br>
-                    <a href="https://digitalmaine.com/maine_running_hall_of_fame/21/">Me. Running Hall of Fame Biographies</a><br>
-                    <a href="https://digitalmaine.com/cumberland_books/86/">Roads of Cumberland, Me.</a>
-                    <div class="clearfix"></div>
-                    <strong2>Mass. College of Art & Design:</strong2><br>
-                    <a href="Black_Artists_Union_MassArt.pdf">Black Artists Union Collection</a>
-                    <div class="clearfix"></div>
-                    <strong2>New England Archivists:</strong2><br>
-                    <a href="NEA.pdf">"Prince Memorial Library Project Increases Awareness of Indigenous Shell Deposits and Coastal Erosion." (2022, October). NEA Newsletter, 49(4), 7.</a>
-                </tr>
-            </table>
-        </center>
-        <div class="clearfix4"></div>
-        <h2><a href="resume.html">Resume</a>&emsp;*&emsp;<a href="projects.html">Projects</a>&emsp;*&emsp;<a href="links.html">Links</a>&emsp;*&emsp;<a href="mailto:ybennett97@gmail.com">Contact</a></h2>
-        <div class="clearfix5"></div>
-    </body>
-    </html>
+
+    <main class="grid-wrap">
+        <h1 class="grid-heading">Select Digital Exhibits [Under Construction]</h1>
+        <ul class="grid">
+            <li class="item">
+                <a class="thumb-link" href="https://digitalarchives.sec.state.ma.us/birds-of-massachusetts/" tabindex="-1" aria-hidden="true">
+                    <span class="thumb"><img src="birds.png" alt="" loading="lazy" onerror="this.style.display='none'"></span>
+                </a>
+                <a class="title" href="https://digitalarchives.sec.state.ma.us/birds-of-massachusetts/">Paintings From: Birds of Massachusetts</a>
+                <span class="caption">Massachusetts Archives</span>
+            </li>
+            <li class="item">
+                <a class="thumb-link" href="https://digitalarchives.sec.state.ma.us/american-jewish-identity/" tabindex="-1" aria-hidden="true">
+                    <span class="thumb"><img src="jewish.png" alt="" loading="lazy" onerror="this.style.display='none'"></span>
+                </a>
+                <a class="title" href="https://digitalarchives.sec.state.ma.us/american-jewish-identity/">American Jewish Identity in Massachusetts</a>
+                <span class="caption">Massachusetts Archives</span>
+            </li>
+            <li class="item">
+                <a class="thumb-link" href="https://digitalarchives.sec.state.ma.us/sacco-and-vanzetti/" tabindex="-1" aria-hidden="true">
+                    <span class="thumb"><img src="images/sacco-and-vanzetti.jpg" alt="" loading="lazy" onerror="this.style.display='none'"></span>
+                </a>
+                <a class="title" href="https://digitalarchives.sec.state.ma.us/sacco-and-vanzetti/">Commonwealth v. Sacco &amp; Vanzetti</a>
+                <span class="caption">Massachusetts Archives</span>
+            </li>
+            <li class="item">
+                <a class="thumb-link" href="https://digitalarchives.sec.state.ma.us/rev250" tabindex="-1" aria-hidden="true">
+                    <span class="thumb"><img src="images/rev250.jpg" alt="" loading="lazy" onerror="this.style.display='none'"></span>
+                </a>
+                <a class="title" href="https://digitalarchives.sec.state.ma.us/rev250">Revolution 250</a>
+                <span class="caption">Massachusetts Archives</span>
+            </li>
+            <li class="item">
+                <a class="thumb-link" href="https://digitalarchives.sec.state.ma.us/salem-witch-trials" tabindex="-1" aria-hidden="true">
+                    <span class="thumb"><img src="images/salem-witch-trials.jpg" alt="" loading="lazy" onerror="this.style.display='none'"></span>
+                </a>
+                <a class="title" href="https://digitalarchives.sec.state.ma.us/salem-witch-trials">Salem Witch Trials Papers</a>
+                <span class="caption">Massachusetts Archives</span>
+            </li>
+            <li class="item">
+                <a class="thumb-link" href="https://digitalarchives.sec.state.ma.us/salem-fire-of-1914" tabindex="-1" aria-hidden="true">
+                    <span class="thumb"><img src="images/salem-fire-1914.jpg" alt="" loading="lazy" onerror="this.style.display='none'"></span>
+                </a>
+                <a class="title" href="https://digitalarchives.sec.state.ma.us/salem-fire-of-1914">Great Salem Fire of 1914</a>
+                <span class="caption">Massachusetts Archives</span>
+            </li>
+            <li class="item">
+                <a class="thumb-link" href="main_exhibit.html" tabindex="-1" aria-hidden="true">
+                    <span class="thumb"><img src="images/nelson-family.jpg" alt="" loading="lazy" onerror="this.style.display='none'"></span>
+                </a>
+                <a class="title" href="main_exhibit.html">Nelson Family Photograph Collection</a>
+                <span class="caption">Simmons University</span>
+            </li>
+            <li class="item">
+                <a class="thumb-link" href="https://web.archive.org/web/20210811050318/https://cumberland200.omeka.net/" tabindex="-1" aria-hidden="true">
+                    <span class="thumb"><img src="images/cumberland-200.jpg" alt="" loading="lazy" onerror="this.style.display='none'"></span>
+                </a>
+                <a class="title" href="https://web.archive.org/web/20210811050318/https://cumberland200.omeka.net/">Bicentennial of Cumberland, Maine</a>
+                <span class="caption">Prince Memorial Library</span>
+            </li>
+        </ul>
+
+        <h1 class="grid-heading second">Select Publications</h1>
+        <ul class="grid no-thumbs">
+            <li class="item">
+                <a class="title" href="https://simmonslis.libguides.com/boston-music-scene">History of the Boston Music Scene, 1960s – 1990s</a>
+                <span class="caption">Simmons University, 2022</span>
+            </li>
+            <li class="item">
+                <a class="title" href="Casco_Bay_Archaeological_Project.pdf">Casco Bay Archaeological Project Collection</a>
+                <span class="caption">Prince Memorial Library, 2022</span>
+            </li>
+            <li class="item">
+                <a class="title" href="https://digitalmaine.com/cumberland_books/90/">Cumberland, Maine Families</a>
+                <span class="caption">Prince Memorial Library, 2021</span>
+            </li>
+            <li class="item">
+                <a class="title" href="https://digitalmaine.com/maine_running_hall_of_fame/21/">Maine Running Hall of Fame Biographies: Through 2006</a>
+                <span class="caption">Prince Memorial Library, 2021</span>
+            </li>
+            <li class="item">
+                <a class="title" href="https://digitalmaine.com/cumberland_books/86/">Roads of Cumberland, Maine</a>
+                <span class="caption">Prince Memorial Library, 2021</span>
+            </li>
+            <li class="item">
+                <a class="title" href="Black_Artists_Union_MassArt.pdf">Black Artists Union Collection, 1970-2017</a>
+                <span class="caption">Mass. College of Art &amp; Design, 2021</span>
+            </li>
+        </ul>
+    </main>
+
+    <h2 class="floating-nav"><a href="index.html">About</a><a href="resume.html">Resume</a><a href="projects.html">Projects</a><a href="mailto:ybennett97@gmail.com">Contact</a></h2>
+</body>
+</html>
